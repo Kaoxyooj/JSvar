@@ -10,6 +10,7 @@ total= hours*paid;
 
 
 console.log(total);*/
+function pay(hours, paid){
 
 var hours;
 var paid;
@@ -31,11 +32,13 @@ otPay= overtime * otHours;
 otTotal	= otPay + regPay;
 rounded = Math.ceil(otTotal * 100)/100;
 
-if (hours < 41 ) {
-    console.log(total);
-}else if (hours > 40) {
-    console.log(rounded);
+	if (hours < 41 ) {
+    	console.log(total);
+	}else if (hours > 40) {
+    	console.log(rounded);
 }
+};
 
+pay();
 
 
