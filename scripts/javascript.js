@@ -1,13 +1,5 @@
 "use strict";
 
-var hours;
-var payHour;
-var regularPay;
-var payment;
-var otPay;
-var otTotal;
-var pt;
-var gTotalv;
 
 
 function userInputHours() {
@@ -21,9 +13,9 @@ function userInputPay() {
 	return pay;
 };
 function regPay(hr,pa){
-	var h;
-	h = hr * pa;
-	return h;
+	var hour;
+	hour = hr * pa;
+	return hour;
 };
 function timeHalf(payPer){
     var half;
@@ -36,9 +28,9 @@ function overTime(hours3) {
     return ot;
 };
 function total(pH,oP) {	
-    var t;
-    t = pH * oP;
-    return t;
+    var totalPay;
+    totalPay = pH * oP;
+    return totalPay;
 };
 function gTotal(opt,opay) {
     var oot;
@@ -50,6 +42,17 @@ function round(r) {
     rounded = Math.ceil(r * 100)/100;
     return rounded;
 };
+
+function main(){
+
+var hours;
+var payHour;
+var regularPay;
+var payment;
+var otPay;
+var otTotal;
+var pt;
+var gTotalv;
 
 hours = userInputHours();
 payHour = userInputPay();
@@ -65,3 +68,6 @@ if (hours <= 40) {
 }else if (hours > 40) {
     console.log(round(gTotalv));
 };
+}
+
+main();
